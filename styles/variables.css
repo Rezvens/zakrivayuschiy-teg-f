@@ -10,4 +10,5 @@
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 .01%, #1a1a1a);
   --accent-color: #000;
+  --button-text-color: var(--page-background-color);
 }

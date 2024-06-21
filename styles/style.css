@@ -189,6 +189,7 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
+
 .button::before {
   content: '';
   position: absolute;
@@ -207,10 +208,16 @@
 }
 
 .button__text {
-  position: relative;
-  z-index: 1;
   transition: mix-blend-mode .5s;
-  color: var(--page-background-color);
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.floppy-icon {
+  width: 28px;
+  aspect-ratio: 1 / 1;
+  transition: mix-blend-mode .5s;
+  fill: var(--button-text-color);
   mix-blend-mode: difference;
 }
 
@@ -243,8 +250,3 @@
   align-self: flex-end;
 }
 
-.button__text
-
-.floppy-icon {
-
-}
