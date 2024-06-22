@@ -86,14 +86,15 @@
 .theme-menu__button:after {
   content: '';
   display: block;
-  width: 0%;
+  transform: scaleX(0);
+  transform-origin: 0;
   height: 2px;
   background-color: var(--accent-color);
-  transition: width .3s;
+  transition: transform .3s;
 }
 
 .theme-menu__button:focus-visible::after {
-  width: 100%;
+  transform: scaleX(1);
   opacity: .6;
 }
 
