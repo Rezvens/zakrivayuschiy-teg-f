@@ -262,20 +262,15 @@
   outline: none;
 }
 
-.heart {
-  transform-origin: 50%;
-  transition: transform .3s;
-}
-.card__icon-button:hover .heart{
-  transform: scale(1.1);
-
-}
-
 .card__icon-button:focus-visible {
   outline: solid 2px var(--accent-color);
   outline-offset: -2px;
 }
 
+.heart {
+  /* transform-origin: 50%; */
+  transition: transform .3s;
+}
 
 .like-icon {
   width: 34px;
@@ -290,6 +285,28 @@
 .like-icon:focus-visible {
   outline: solid 2px var(--accent-color);
 }
+
+.card__icon-button:hover .main-body {
+  fill: var(--accent-color);
+}
+
+.sparks {
+
+}
+
+.contour {
+
+}
+
+.main-body {
+  transition: fill 3s;
+}
+
+.core {
+
+}
+
+
 
 .page__save-button {
   inline-size: 335px;
