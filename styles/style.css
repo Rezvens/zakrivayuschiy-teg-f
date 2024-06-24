@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
   border: solid 2px var(--accent-color);
-  font-family: "PressStart2P";
+  font-family: "PressStart2P", 'Courier New', monospace;
   text-transform: uppercase;
   background-color: var(--page-background-color);
   block-size: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
@@ -116,7 +116,7 @@
 }
 
 .card-label {
-  font-family: "PressStart2P";
+  font-family: "PressStart2P", 'Courier New', monospace;
   color: var(--accent-color);
   position: absolute;
   z-index: 1;
@@ -222,7 +222,7 @@
 }
 
 .button__text {
-  font-family: "PressStart2P";
+  font-family: "PressStart2P", 'Courier New', monospace;
   font-size: 14px;
   transition: mix-blend-mode 0.5s;
   color: var(--button-text-color);
