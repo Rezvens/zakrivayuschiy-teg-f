@@ -125,13 +125,10 @@
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 50%;
-}
-
-.card-label {
   text-shadow: -1px -1px 0 var(--page-background-color),
-    1px -1px 0 var(--page-background-color),
-    -1px 1px 0 var(--page-background-color),
-    1px 1px var(--page-background-color);
+  1px -1px 0 var(--page-background-color),
+  -1px 1px 0 var(--page-background-color),
+  1px 1px var(--page-background-color);
 }
 
 @supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
