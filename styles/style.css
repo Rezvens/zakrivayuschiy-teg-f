@@ -151,7 +151,7 @@
 }
 
 .card:nth-child(3) .card-image {
-  filter: grayscale(1), blur(2px);
+  filter: grayscale(1) blur(2px);
 }
 
 .card:nth-child(4) .card-image {
