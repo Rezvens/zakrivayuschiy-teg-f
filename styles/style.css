@@ -379,7 +379,6 @@
   block-size: 193px;
   border: solid 2px var(--accent-color);
   background-color: var(--page-background-color);
-  opacity: .5;
   align-items: center;
   justify-items: center;
 }
