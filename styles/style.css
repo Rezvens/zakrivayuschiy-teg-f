@@ -16,7 +16,8 @@
 
 .page {
   margin-inline: auto;
-  font-family: "Inter-Variable", sans-serif;
+  font-family: 'Inter-Variable', sans-serif;
+  font-variation-settings: 'wght' var(--regular-text);
   max-inline-size: 696px;
   background-color: var(--page-background-color);
   color: var(--accent-color);
@@ -33,7 +34,7 @@
   justify-content: center;
   align-items: center;
   border: solid 2px var(--accent-color);
-  font-family: "PressStart2P", 'Courier New', monospace;
+  font-family: 'PressStart2P', 'Copperplate', fantasy;
   text-transform: uppercase;
   background-color: var(--page-background-color);
   block-size: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
@@ -61,6 +62,7 @@
 .theme-menu__button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--content-title-color);
@@ -77,7 +79,7 @@
 }
 
 .theme-menu__button:after {
-  content: "";
+  content: '';
   display: block;
   transform: scaleX(0);
   transform-origin: 0;
@@ -97,7 +99,7 @@
 }
 
 .theme-menu__button[disabled]::before {
-  content: "▶";
+  content: '▶';
   display: inline-block;
   position: absolute;
   top: 0;
@@ -116,7 +118,7 @@
 }
 
 .card-label {
-  font-family: "PressStart2P", 'Courier New', monospace;
+  font-family: 'PressStart2P', 'Copperplate', fantasy;
   color: var(--accent-color);
   position: absolute;
   z-index: 1;
@@ -174,25 +176,25 @@
 .card {
   border: solid 2px var(--accent-color);
   background-color: var(--page-background-color);
-  margin-block-end: 47px;
+  margin-block-end: 50px;
 }
 
 .card-title {
   font-size: 18px;
-  font-variation-settings: "wght" var(--bold-text);
+  font-variation-settings: 'wght' var(--bold-text);
   padding-inline-start: clamp(0.75rem, 0.929rem + -0.476vw, 0.5rem);
   letter-spacing: 0.01em;
-  padding-block-start: 4px;
-  padding-block-end: 4px;
+  padding-block: clamp(0.27rem, 0.134rem + 0.362vw, 0.46rem);
 }
 
 .card-text {
   font-size: 18px;
-  font-variation-settings: "wght" var(--regular-text);
   padding: 23px 26px 0;
+  line-height: 1.183em;
 }
 
 .button {
+  cursor: pointer;
   background-color: transparent;
   position: relative;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -203,7 +205,7 @@
 }
 
 .button::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   width: 100%;
@@ -219,7 +221,7 @@
 }
 
 .button__text {
-  font-family: "PressStart2P", 'Courier New', monospace;
+  font-family: 'PressStart2P', 'Copperplate', fantasy;
   font-size: 14px;
   transition: mix-blend-mode 0.5s;
   color: var(--button-text-color);
@@ -251,12 +253,14 @@
 }
 
 .card__icon-button {
+  outline-color: transparent;
   background-color: transparent;
   border: none;
   inline-size: 38px;
   block-size: 38px;
   margin-inline-end: 4px;
   padding: 0;
+  transition: outline-color .3s ease;
 }
 
 .card__icon-button:focus {
@@ -266,6 +270,7 @@
 .card__icon-button:focus-visible {
   outline: solid 2px var(--accent-color);
   outline-offset: -2px;
+
 }
 
 .like-icon {
@@ -273,6 +278,7 @@
 }
 
 .heart {
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
@@ -343,12 +349,27 @@
     justify-content: space-evenly;
     block-size: 80px;
   }
+
   .floppy-icon {
     width: 28px;
     margin-block-start: 10px;
   }
+
   .floppy-icon .button__text {
     margin-block-start: 10px;
+  }
+
+  #modal-floppy-insert .floppy-icon {
+    margin-block-start: 0;
+    justify-self: end;
+  }
+
+  #modal-floppy-insert  p.modal-text {
+    padding-inline-start: 22px;
+  }
+
+  #modal-floppy-insert .modal-submit-button {
+    inline-size: 257px;
   }
 }
 
@@ -358,6 +379,7 @@
   block-size: 193px;
   border: solid 2px var(--accent-color);
   background-color: var(--page-background-color);
+  opacity: .5;
   align-items: center;
   justify-items: center;
 }
@@ -366,7 +388,7 @@
 }
 
 #modal-floppy-insert::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 #modal-floppy-insert .floppy-icon {
